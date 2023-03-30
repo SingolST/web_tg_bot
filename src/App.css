@@ -8,3 +8,47 @@ body {
   background: var(--tg-theme-bg-color);
   color: var(--tg-theme-text-color);
 }
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  padding: 10px;
+  border: 1px solid burlywood;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 500px;
+  flex-wrap: wrap;
+}
+
+.menu li {
+  list-style-type: none;
+}
+
+.menu li .foto_menu {
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.menu li .foto_menu img {
+  width: 210px;
+  height: 210px;
+}
+
+.menu li .foto_menu button {
+  width: 100%;
+}
+
+.sale {
+  width: 500px;
+  height: 40px;
+}

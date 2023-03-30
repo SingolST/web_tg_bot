@@ -4,7 +4,7 @@ import { useTelegram } from './hooks/useTelegram';
 
 
 function App() {
-  const {onToggleButton, tg} = useTelegram();
+  const {tg} = useTelegram();
 
   useEffect(() => {
     tg.ready()
@@ -12,7 +12,38 @@ function App() {
 
   return (
     <div className="App">
-      <button onClick={onToggleButton}>Toggle</button>
+      <p>МЕНЮ</p>
+      <ul className='menu'>
+        <li>
+          <div className='foto_menu'>
+            <img src="img/3480641.png" alt="burger" />
+            <a href="/">Бургер</a>
+            <button><a href='/'>Выбрать</a></button>
+          </div>
+        </li>
+        <li>
+          <div className='foto_menu'>
+            <img src="img/3480641.png" alt="burger" />
+            <a href="/">Бургер</a>
+            <button><a href='/'>Выбрать</a></button>
+          </div>
+        </li>
+        <li>
+          <div className='foto_menu'>
+            <img src="img/3480641.png" alt="burger" />
+            <a href="/">Бургер</a>
+            <button><a href='/'>Выбрать</a></button>
+          </div>
+        </li>
+        <li>
+          <div className='foto_menu'>
+            <img src="img/3480641.png" alt="burger" />
+            <a href="/">Бургер</a>
+            <button><a href='/'>Выбрать</a></button>
+          </div>
+        </li>
+      </ul>
+      <button className='sale'>Заказать 22333</button>
     </div>
   );
 }
